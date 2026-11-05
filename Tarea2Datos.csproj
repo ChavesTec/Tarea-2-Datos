@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <!-- Si tienen otro SDK más nuevo (9 o 10) también compila; si solo tienen ese, cambien a net9.0 o net10.0 -->
+    <RollForward>Major</RollForward>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>SortingBenchmark</RootNamespace>
+    <AssemblyName>Tarea2Datos</AssemblyName>
+    <!-- Desactiva la compilación JIT por niveles (tiered compilation) para que el código se
+         compile optimizado desde la primera vez y no cambie de velocidad a mitad de las mediciones. -->
+    <TieredCompilation>false</TieredCompilation>
+  </PropertyGroup>
+
+</Project>
